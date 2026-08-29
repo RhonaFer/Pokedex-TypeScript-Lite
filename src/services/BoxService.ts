@@ -37,7 +37,7 @@ export function removerDoCatalogo(catalogo: PokemonResumo[], id:number): Pokemon
         console.log(`[AVISO] Nenhum Pokémon encontrado com esse ID.`);
         return catalogo;
     }
-    catalogo.filter(item => item.id !== id);
+    catalogo = catalogo.filter(item => item.id !== id);
     console.log(`[OK] Pokémon removido do catálogo.`);
 
     return catalogo;
